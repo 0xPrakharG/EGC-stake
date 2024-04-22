@@ -1,0 +1,116 @@
+.buy-now {
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1200px;
+}
+.buy-now-left {
+  display: flex;
+  width: 80%;
+}
+.buy-now .buy-now-left img {
+  width: 100%;
+}
+.buy-now-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+.buy-now-right a {
+  width: 250px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 0;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+.buy-now-right a:nth-child(1) {
+  color: white;
+  background: linear-gradient(90deg, #cd82fd 0%, #9554f6 51%, #56a2fc 100%);
+}
+.buy-now-right a:nth-child(2) {
+  color: #6e0080;
+  background: linear-gradient(90deg, #fd82f1 0%, #de861d 51%, #e4d127 100%);
+}
+@media screen and (min-width: 401px) {
+  .buy-now {
+    margin-top: 1100px;
+  }
+}
+@media screen and (min-width: 431px) {
+  .buy-now {
+    margin-top: 950px;
+  }
+}
+@media screen and (min-width: 501px) {
+  .buy-now {
+    margin-top: 800px;
+  }
+}
+@media screen and (min-width: 531px) {
+  .buy-now {
+    margin-top: 700px;
+  }
+}
+@media screen and (min-width: 581px) {
+  .buy-now {
+    margin-top: 580px;
+  }
+  .buy-now-right a {
+    width: 300px;
+  }
+}
+@media screen and (min-width: 661px) {
+  .buy-now {
+    margin-top: 400px;
+  }
+  .buy-now-left {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 761px) {
+  .buy-now {
+    margin-top: 320px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .buy-now {
+    flex-direction: row;
+    width: 80%;
+    margin: 320px auto 0;
+    gap: 30px;
+  }
+  .buy-now-right {
+    margin-top: 0px;
+    gap: 40px;
+  }
+  .buy-now-right a {
+    font-size: 25px;
+    padding: 15px 15px;
+  }
+}
+@media screen and (min-width: 1201px) {
+  .buy-now-left {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 1701px) {
+  .buy-now-left {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 1801px) {
+  .buy-now-right a {
+    width: 400px;
+    font-size: 35px;
+    padding: 20px 20px;
+  }
+}

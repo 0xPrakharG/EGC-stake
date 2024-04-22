@@ -1,0 +1,81 @@
+.footer {
+  padding-top: 130px;
+}
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  width: 90%;
+  margin: 0 auto;
+}
+.footer-container h1 {
+  font-family: 'Coda', sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+}
+.footer-info {
+  font-family: 'Coda', sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 30px;
+  line-height: 45px;
+}
+.socials {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.socials img {
+  width: 60px;
+}
+.base {
+  display: flex;
+  justify-content: space-between;
+  width: 290px;
+  margin: 60px auto 0;
+}
+.base p {
+  font-family: 'Comic Neue', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+@media screen and (min-width: 1025px) {
+  .footer-container {
+    width: 70%;
+  }
+  .socials img {
+    width: 70px;
+  }
+  .base {
+    width: 380px;
+  }
+  .base p {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1551px) {
+  .footer-container {
+    width: 50%;
+  }
+  .footer-container h1 {
+    font-size: 40px;
+  }
+  .footer-info {
+    font-size: 30px;
+    line-height: 50px;
+  }
+  .socials img {
+    width: 80px;
+  }
+  .base {
+    width: 450px;
+  }
+  .base p {
+    font-size: 25px;
+  }
+}

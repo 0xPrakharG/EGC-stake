@@ -1,0 +1,132 @@
+.faq-section {
+  width: 100%;
+  position: sticky;
+  margin: 100px auto 0;
+}
+.faq-container {
+  width: 70%;
+  margin: 0 auto;
+}
+.faq-img-container {
+  height: fit-content;
+}
+.faq-desktop-image {
+  display: none;
+  width: 400px;
+}
+.faq-mobile-image {
+  width: 100%;
+}
+.faqs {
+  position: relative;
+  padding: 30px;
+  top: -50px;
+  background: rgba(0, 0, 0, 0.34);
+  border-radius: 16px;
+  backdrop-filter: blur(2.9px);
+  -webkit-backdrop-filter: blur(6.9px);
+  box-shadow:
+    0 0 4px #ffffff50 inset,
+    10px 15px 10px #230847;
+  color: #ffffff;
+}
+.faqs h1 {
+  font-family: 'Coda', sans-serif;
+  font-weight: 800;
+  font-size: 25px;
+}
+.faq-desktop-btn {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+.faqs a {
+  text-decoration: none;
+}
+.view-desktop-btn {
+  padding: 10px 40px;
+  border-radius: 20px;
+  background-color: #9334fe;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+}
+.faq-mobile-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.view-mobile-btn {
+  padding: 10px 40px;
+  border-radius: 20px;
+  background-color: #9334fe;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+}
+@media screen and (min-width: 651px) {
+  .faqs {
+    top: -80px;
+  }
+}
+@media screen and (min-width: 951px) {
+  .faq-container {
+    display: flex;
+    width: 90%;
+    margin-left: 100px;
+  }
+  .faq-desktop-image {
+    display: flex;
+  }
+  .faq-mobile-image {
+    display: none;
+  }
+  .faqs {
+    top: 90px;
+    left: -80px;
+  }
+  .faq-desktop-btn {
+    display: flex;
+  }
+  .faq-mobile-btn {
+    display: none;
+  }
+}
+@media screen and (min-width: 1201px) {
+  .faqs h1 {
+    font-size: 35px;
+  }
+}
+@media screen and (min-width: 1551px) {
+  .faq-container {
+    margin-left: 120px;
+  }
+  .faq-desktop-image {
+    width: 500px;
+  }
+  .faqs {
+    padding: 50px;
+  }
+  .faqs h1 {
+    font-size: 35px;
+  }
+  .view-desktop-btn {
+    padding: 20px 60px;
+    border-radius: 40px;
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 1801px) {
+  .faq-container {
+    margin-left: 140px;
+  }
+  .faqs {
+    padding: 60px;
+  }
+  .faqs h1 {
+    font-size: 50px;
+  }
+}

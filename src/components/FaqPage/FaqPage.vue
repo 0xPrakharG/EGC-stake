@@ -1,0 +1,85 @@
+<script>
+import { RouterLink } from 'vue-router'
+import { reactive } from 'vue'
+import Questions from '@/components/FaqPage/QuestionsContainer.vue'
+import data2 from '@/data2.js'
+
+export default {
+  name: 'App',
+  components: {
+    Questions
+  },
+  setup() {
+    const questions = reactive(data2)
+    return { questions, RouterLink }
+  }
+}
+</script>
+
+<template>
+  <div class="faq-page">
+    <img src="@/assets/faq-page.png" alt="" />
+  </div>
+  <div class="faq-questions">
+    <div class="faq-box">
+      <h1>FAQ</h1>
+      <Questions :questions="questions" />
+    </div>
+  </div>
+</template>
+
+<style scoped>
+.faq-page img {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-height: 100%;
+  border: none;
+}
+.faq-questions {
+  padding: 20px 0;
+  width: 90%;
+  margin: 0 auto;
+}
+.faq-box {
+  position: relative;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.34);
+  border-radius: 20px;
+  backdrop-filter: blur(2.9px);
+  -webkit-backdrop-filter: blur(6.9px);
+  box-shadow:
+    0 0 4px #ffffff90 inset,
+    0 20px 10px #230847;
+  color: #ffffff;
+}
+.faq-box h1 {
+  font-family: 'Coda', sans-serif;
+  font-weight: 800;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 961px) {
+  .faq-questions {
+    padding: 50px 0;
+  }
+  .faq-box {
+    padding: 30px;
+  }
+  .faq-box h1 {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 1391px) {
+  .faq-questions {
+    padding: 100px 0;
+  }
+  .faq-box {
+    padding: 40px;
+  }
+  .faq-box h1 {
+    font-size: 35px;
+  }
+}
+</style>
