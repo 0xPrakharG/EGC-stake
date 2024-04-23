@@ -21,7 +21,9 @@
           </span>
         </p>
       </div>
-      <button>More</button>
+      <div class="btn-container">
+        <a href="/coins" class="more-btn">More</a>
+      </div>
     </div>
   </div>
 </template>

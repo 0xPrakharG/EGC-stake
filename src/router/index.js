@@ -25,6 +25,16 @@ const router = createRouter({
       path: '/#team',
       name: 'Team',
       component: HomeView
+    },
+    {
+      path: '/whitepaper',
+      name: 'Whitepaper',
+      component: HomeView
+    },
+    {
+      path: '/platform',
+      name: 'Platform',
+      component: HomeView
     }
   ]
 })
