@@ -4,7 +4,7 @@
       <img src="@/assets/buyNow.png" alt="Buy Now Image" />
     </div>
     <div class="buy-now-right">
-      <a>Buy Now</a>
+      <RouterLink to="/buy">Buy Now</RouterLink>
       <a>Buy on UNISWAP</a>
     </div>
   </div>
