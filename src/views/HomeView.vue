@@ -1,5 +1,6 @@
 <script setup>
 import BuyNow from '@/components/Buy/BuyNow.vue'
+import StakingSection from '@/components/StakingSection/StakingSection.vue'
 import FaqSection from '@/components/FaqSection/FaqSection.vue'
 import PageFooter from '@/components/Footer/PageFooter.vue'
 import WebHero from '@/components/Hero/WebHero.vue'
@@ -10,6 +11,7 @@ import WebHero from '@/components/Hero/WebHero.vue'
     <WebHero />
     <div>
       <BuyNow />
+      <StakingSection />
       <FaqSection />
       <PageFooter />
     </div>

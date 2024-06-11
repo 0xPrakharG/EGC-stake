@@ -1,0 +1,109 @@
+.staking-section {
+  position: sticky;
+  margin: 100px auto 0;
+  background: rgba(0, 0, 0, 0.34);
+  border-radius: 16px;
+  backdrop-filter: blur(2.9px);
+  -webkit-backdrop-filter: blur(6.9px);
+  box-shadow:
+    0 0 4px #ffffff50 inset,
+    10px 15px 10px #230847;
+  width: 80%;
+  padding: 40px 50px;
+}
+.staking-container {
+  display: flex;
+  flex-direction: column;
+}
+.staking-text {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.staking-text > h1 {
+  font-size: 40px;
+  font-family: 'Coda', sans-serif;
+  font-weight: 800;
+  background: #ffffff;
+  background: linear-gradient(90deg, #6da8ff 0%, #950eff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.staking-text > p {
+  font-size: 20px;
+  font-family: 'Coda', sans-serif;
+  letter-spacing: 1px;
+  line-height: 70px;
+  color: #fff;
+}
+.staking-img-desktop {
+  display: none;
+}
+.staking-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  margin: 70px 0;
+}
+.staking-img-mobile {
+  position: absolute;
+  width: 250px;
+  left: -100px;
+}
+.staking-img-mobile > img {
+  width: 100%;
+}
+.btn-container {
+  width: 60%;
+  text-align: center;
+  background: linear-gradient(90deg, #cd82fd 0%, #9554f6 51%, #56a2fc 100%);
+  padding: 10px;
+  border-radius: 30px;
+}
+.btn-container > a {
+  font-size: 23px;
+  font-family: 'Coda', sans-serif;
+  font-weight: 800;
+  text-decoration: none;
+  color: #fff;
+}
+@media screen and (min-width: 1024px) {
+  .staking-img-mobile {
+    display: none;
+  }
+  .staking-img-desktop {
+    display: block;
+    width: 350px;
+    margin-top: 50px;
+  }
+  .staking-img-desktop > img {
+    width: 100%;
+  }
+  .staking-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  .staking-text {
+    width: 60%;
+    margin-top: 40px;
+  }
+  .staking-text > p {
+    line-height: 50px;
+  }
+  .staking-bottom {
+    justify-content: center;
+  }
+  .btn-container {
+    padding: 15px;
+    border-radius: 15px;
+    width: 40%;
+  }
+  .btn-container > a {
+    font-size: 25px;
+  }
+}

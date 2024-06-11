@@ -41,6 +41,11 @@ const router = createRouter({
       path: '/buy',
       name: 'Buy Coins',
       component: BuyCoinsView
+    },
+    {
+      path: '/staking',
+      name: 'Staking',
+      component: BuyCoinsView
     }
   ]
 })
