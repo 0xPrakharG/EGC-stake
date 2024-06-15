@@ -28,6 +28,7 @@ const openMobileMoreNav = computed(() => {
         <RouterLink to="/coins">What is Coins</RouterLink>
         <RouterLink to="/faq">FAQ</RouterLink>
         <a href="#team">Team Support</a>
+        <RouterLink to="/staking">Staking</RouterLink>
         <div @click="openMoreNav = !openMoreNav">
           <a>More </a>
           <svg
@@ -72,6 +73,9 @@ const openMobileMoreNav = computed(() => {
         </div>
         <div @click="navOpen = !navOpen">
           <a href="#team">Team Support</a>
+        </div>
+        <div @click="navOpen = !navOpen">
+          <RouterLink to="/staking">Staking</RouterLink>
         </div>
         <div @click="openMobileMore = !openMobileMore">
           <a>More</a>

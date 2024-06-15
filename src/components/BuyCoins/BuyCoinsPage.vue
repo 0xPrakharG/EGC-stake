@@ -1,8 +1,12 @@
 <script setup>
+import { ref } from 'vue'
 import DropdownMenu from '../DropdownMenu.vue'
 import DropdownMenu2 from '../DropdownMenu2.vue'
 import DropdownMenu3 from '../DropdownMenu3.vue'
 import DropdownMenu4 from '../DropdownMenu4.vue'
+import ConnectWallet from '@/components/ConnectWallet/ConnectWallet.vue'
+
+const connect = ref(false)
 </script>
 
 <template>
@@ -74,7 +78,7 @@ import DropdownMenu4 from '../DropdownMenu4.vue'
           </div>
         </div>
         <div class="connect-wallet-btn">
-          <button>Connect Wallet</button>
+          <button @click="connect = !connect">Connect Wallet</button>
         </div>
         <div class="terms">
           <div></div>
@@ -84,6 +88,9 @@ import DropdownMenu4 from '../DropdownMenu4.vue'
           </div>
         </div>
       </div>
+    </div>
+    <div v-if="connect == true">
+      <ConnectWallet />
     </div>
   </div>
 </template>

@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import CoinsView from '../views/CoinsView.vue'
 import FaqView from '../views/FaqView.vue'
 import BuyCoinsView from '../views/BuyCoinsView.vue'
+import StakingView from '../views/StakingView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -45,7 +46,7 @@ const router = createRouter({
     {
       path: '/staking',
       name: 'Staking',
-      component: BuyCoinsView
+      component: StakingView
     }
   ]
 })
