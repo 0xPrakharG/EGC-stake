@@ -199,6 +199,7 @@ const reload = () => {
   background: linear-gradient(90deg, #cd82fd 0%, #9554f6 51%, #56a2fc 100%);
   border-radius: 30px;
   padding: 10px 20px;
+  text-decoration: none;
 }
 .learn-btn > div {
   width: 30px;

@@ -1,16 +1,19 @@
 <script>
 import StakingCard from '@/components/SimpleStaking/StakingCard.vue'
+import CheckReward from '@/components/SimpleStaking/CheckReward.vue'
 import ConnectWallet from '@/components/ConnectWallet/ConnectWallet.vue'
 
 export default {
   name: 'SimpleStakingPage',
   components: {
     StakingCard,
-    ConnectWallet
+    ConnectWallet,
+    CheckReward
   },
   data() {
     return {
-      connect: false
+      connect: false,
+      reward: false
     }
   }
 }
@@ -63,18 +66,21 @@ export default {
               </div>
             </div>
             <div class="reward-btn-desktop">
-              <button>Check Reward</button>
+              <button @click="reward = true">Check Reward</button>
             </div>
           </div>
         </div>
         <div class="reward-btn-mobile">
-          <button>Check Reward</button>
+          <button @click="reward = true">Check Reward</button>
         </div>
       </div>
     </div>
   </div>
   <div v-if="connect == true" class="connect">
     <ConnectWallet />
+  </div>
+  <div v-if="reward == true" class="reward">
+    <CheckReward />
   </div>
 </template>
 
